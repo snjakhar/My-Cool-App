@@ -1,4 +1,8 @@
-const app=require("index")
+const express=require('express');
+const app=express();
+app.get('/sri',async(req,res)=>{
+    res.end('<h1>Hello Bhai</h1>');
+})
 
 const http = require('http');
 const port = process.env.PORT || 3000
